@@ -1,0 +1,222 @@
+body {
+  margin: 0 auto;
+  font-family: 'Bebas Neue', cursive;
+  color: #FFFFFF;
+  font-size: 16px;
+}
+h1 {
+  font-size: 35px;
+  margin: 0 0 30px;
+}
+h2 {
+  font-size: 28px;
+  margin: 0;
+}
+h3 {
+  font-size: 24px;
+  margin: 0;
+}
+.wrapper {
+  margin: 0 auto;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  transition: all 1s ease-in-out;
+}
+
+.momentum .container {
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.quote {
+  box-sizing: border-box;
+  padding: 20px 10px 10px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  max-width: 320px;
+  width: 100%;
+  min-height: 50px;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  align-self: flex-start;
+}
+blockquote {
+  margin: 0 20px 20px;
+  transition: all 0.5s ease-in-out;
+}
+figcaption {
+  transition: all 0.5s ease-in-out;
+}
+.btn {
+  outline: none;
+  border: none;
+  font-family: 'Bebas Neue', cursive;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 60px;
+  height: 30px;
+  font-weight: bold;
+  border-radius: 10px 0 10px 0;
+  color: #FFFFFF;
+  background-color: rgba(255, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn:hover {
+  background-color: rgba(255, 0, 0, 0.3);
+  box-shadow: 0 0 2px 0px #FFFFFF;
+}
+.bg-color {
+  box-sizing: border-box;
+  padding: 10px 10px 0;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.time {
+  text-align: center;
+}
+time {
+  font-size: 100px;
+}
+.day {
+  font-family: 'Bebas Neue', cursive;
+}
+time span {
+  position: relative;
+  top: -5px;
+}
+.name {
+  display: inline-block;
+}
+.subtitle {
+  margin: 0 0 10px;
+} 
+.focus {
+  display: inline-block;
+}
+.weather {
+  box-sizing: border-box;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+.weather__wrapper {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.weather__city {
+  display: inline-block;
+  margin: 0;
+}
+.weather__icon {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  transition: all 1s ease-in-out;
+}
+.weather__temp {
+  margin: 0;
+  font-size: 30px;
+}
+.weather__features-list {
+  margin: 0;
+  padding: 0;
+  width: 150px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+.weather__features-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.weather__features-icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+}
+.weather__features-title {
+  margin: 0;
+  font-size: 14px;
+}
+.weather__features-desc {
+  margin: 0;
+  text-transform: lowercase;
+}
+.button__next {
+  border: none;
+  outline: none;
+  font-family: 'Bebas Neue', cursive;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(255, 0, 0, 0.2);
+  color: #FFFFFF;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.button__next:hover {
+  background-color: rgba(255, 0, 0, 0.5);
+  box-shadow: 0 0 2px 0px #FFFFFF;
+}
+
+@media(max-width: 1024px) {
+  .bg-color {
+    margin-top: 150px;
+  }
+  time {
+    font-size: 80px;
+  }
+}
+
+@media(max-width: 768px) {
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 18px;
+    margin: 0;
+  }
+  h3 {
+    font-size: 18px;
+    margin: 0 0 30px;
+  }
+  .quote {
+    width: auto;
+    margin-left: calc(50% - 160px);
+  }
+  time {
+    font-size: 35px;
+  }
+  .weather {
+    position: static;
+  }
+  .button__next {
+    right: 15px;
+    bottom: 15px;
+  }
+}
